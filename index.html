@@ -10,35 +10,90 @@
                 height: auto;
             }
 
+            .container {
+
+                width: 940px;
+                margin-left: auto;
+                margin-right: auto;
+                background-color: aqua;
+
+            }
+            #wrapper1 {
+                display: flex;
+                margin-left: auto;
+                margin-right: auto;
+                justify-content: center;
+            }
+
+            #left1 {
+                width:auto;
+                padding-right: 20px;
+            }
+
+            #right1 {
+                width: auto;
+                padding-left: 20px;
+            }
+
+            #wrapper2 {
+                display: flex;
+                margin-left: auto;
+                margin-right: auto;
+                justify-content: center;
+            }
+            #left2 {
+                width: auto;
+                padding-right: 20px;
+            }
+
+            #right2 {
+                width:auto;
+                padding-left: 20px;
+            }
+
         </style>
     </head>
     <body>
+        <div class=container>
 
         <h1>Nick Barkidjija</h1>
-        <p style="background-color:blue">My favorite color is <strong>blue</strong></p>
-        <p><a target="_blank" href="https://www.netflix.com">This is my favorite website.</a></p>
-        <img src="https://i.ytimg.com/vi/ELjdfVuA4aM/maxresdefault.jpg" alt = "Spearfishing, my favorite activity">
-
-        <h2>Enrolled Classes</h2>
-        <ul>
-            <li>DSCI 350</li>
-            <li>SPAN 220</li>
-            <li>MATH 208x</li>
-            <li>ITP 104</li>
-            <li>CSCI 103L</li>
-        </ul>
-        <h2>Completed items</h2>
-        <ul>
-            <li><a href="assignment_01.html">Assignment 1</a></li>
-            <li><a href="interests.html">Assignment 2</a></li>
-
-
-        </ul>
-        <h2>Completed Labs</h2>
-        <ul>
-            <li><a href = "index.html">Lab 2</a></li>
-        </ul>
-            <li><a href="lab_03 file,html">Lab 3</a></li>
+        <p><a href="npbarkidjija@usc.edu">Email</a></p>
+            <div id="wrapper1">
+                <div id="left1">
+                    <p style="background-color:blue">My favorite color is <strong>blue</strong></p>
+                    <p><a target="_blank" href="https://www.netflix.com">This is my favorite website.</a></p>
+                    <img src="https://i.ytimg.com/vi/ELjdfVuA4aM/maxresdefault.jpg" alt = "Spearfishing, my favorite activity">
+                </div>
+                <div id="right1">
+                    <h2>Enrolled Classes</h2>
+                    <ul>
+                        <li>DSCI 350</li>
+                        <li>SPAN 220</li>
+                        <li>MATH 208x</li>
+                        <li>ITP 104</li>
+                        <li>CSCI 103L</li>
+                    </ul>
+                </div>
+            </div>
+            <div id="wrapper2">
+                <div id="left2">
+                    <h2>Completed items</h2>
+                    <ul>
+                        <li><a href="assignment_01.html">Assignment 1</a></li>
+                        <li><a href="interests.html">Assignment 2</a></li>
+                    </ul>
+                </div>
+                <div id="right2">
+                    <h2>Completed Labs</h2>
+                    <ul>
+                        <li><a href = "index.html">Lab 2</a></li>
+                        <li><a href="lab_03 file,html">Lab 3</a></li>
+                    </ul>
+                </div>    
+                
+            </div>
+        
+        </div>
 
 
 
