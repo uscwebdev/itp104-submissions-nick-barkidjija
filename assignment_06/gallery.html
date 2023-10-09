@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="styles.css">
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
+
+
+        <title>
+            Interest Photo Gallery
+        </title>
+        <h1>Photos</h1>
+        <style>
+            h1 {
+                background-image: url("img/cover2.jpeg");
+                width: max;
+                height: 450px;
+                text-align: center;
+                font-size:100px;
+                background-position: center;
+                background-size: cover;
+                color: white;
+            }
+            .item {
+                overflow: hidden;
+                align-content: center;
+                display: flex;
+                justify-content: center;
+                position: relative;
+
+
+            }
+            .container {
+                width: 1000px;
+                display: flex;
+                flex-wrap: wrap;
+                margin: 0 auto;
+                gap: 10px;
+                border: 1px;
+                border-color: black;
+                padding-top: 50px;
+
+            }
+            .item1 {
+                height: 225px;
+                width: 200px;
+
+            }
+            .item img {
+                height: 100%;
+                width: auto;
+                display: block;
+            }
+            
+            .item2 {
+                width: 300px;
+                max-height: 420px;
+            }
+            .item3 {
+                max-height: 200px;
+                width: 170px;
+                
+            }
+            .item4 {
+                max-height: 250px;
+                width: 220px;
+
+            }
+            .item5 {
+                max-width: 220px;
+                max-height: 320px;
+            }
+            .item6 {
+                width: 315px;
+                max-height: 445px;
+            }
+            .item7 {
+                width: 160px;
+                max-height: 270px;
+            }
+            .item8 {
+                width: 300px;
+                max-height: 380px;
+            }
+            .item9 {
+                width: 160px;
+                max-height: 200px;
+            }
+            .item10 {
+                width: 320px;
+                max-height: 420px;
+            }
+            .overlay {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-color: rgba(0, 0, 0, 0.7);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                opacity: 0;
+                transition: opacity 0.3s ease;
+            }
+
+            .caption {
+                color: white;
+                font-size: 16px;
+                text-align: center;
+                padding: 10px; /* Adjust padding to fit within the item */
+                margin: 0;
+                font-family: "Oswald";
+            }
+
+            .item:hover .overlay {
+                opacity: 1; /* Show overlay on hover */
+            }
+
+
+
+        </style>
+
+    </head>
+
+    <body>
+        <div id="navbar">
+            <a href="home.html">Home</a>
+            <ul id="sub-menu">
+                <li><a href="#section1">Playing While Growing Up</a></li>
+                <li><a href="#section2">Following Soccer</a></li>
+                <li><a href="#section3">Playing Casually and Coaching</a></li>
+
+            </ul>
+            <a href="gallery.html">Photo Gallery</a>
+        </div>
+        <div class="container">
+            <div class="item item1">
+                <img src="img/1.jpeg" id="img1">
+                <div class="overlay">
+                    <p class="caption">Gareth Bale for Wales</p>
+                </div>
+            </div>
+            <div class="item item2">
+                <img src="img/3.jpeg">
+                <div class="overlay">
+                    <p class="caption">Nominees for The Best award</p>
+                </div>
+            </div>
+            <div class="item item3">
+                <img src="img/2.jpeg">
+                <div class="overlay">
+                    <p class="caption">Jude Bellingham</p>
+                </div>
+            </div>
+            <div class="item item4">
+                <img src="img/4.jpg.webp">
+                <div class="overlay">
+                    <p class="caption">A September sunset in the Premier League</p>
+                </div>
+            </div>
+            <div class="item item5">
+                <img src="img/5.jpg.webp">
+                <div class="overlay">
+                    <p class="caption">A touchline argument</p>
+                </div>
+            </div>
+            <div class="item item6">
+                <img src="img/6.jpg.webp">
+                <div class="overlay">
+                    <p class="caption">Son Heung-Min after scoring a hattrick</p>
+                </div>
+            </div>            
+            <div class="item item7">
+                <img src="img/7.jpg.webp">
+                <div class="overlay">
+                    <p class="caption">Nottingham Forest players celebrating</p>
+                </div>
+            </div>
+            <div class="item item8">
+                <img src="img/8.jpg.webp">
+                <div class="overlay">
+                    <p class="caption">Brighton scoring a goal</p>
+                </div>
+            </div>
+            <div class="item item9">
+                <img src="img/9.jpg.webp">
+                <div class="overlay">
+                    <p class="caption">Leeds celebrating a goal</p>
+                </div>
+            </div>
+            <div class="item item10">
+                <img src="img/10.jpg.webp">
+                <div class="overlay">
+                    <p class="caption">Newcastle United players</p>
+                </div>
+            </div>
+        </div>
+
+    </body>
+</html>

@@ -1,0 +1,82 @@
+#right figure figcaption {
+    display: none;
+  }
+  
+#right figure:hover figcaption {
+    display: block;
+  }
+
+.item {
+    border: 1px;
+    border-color: black;
+    border-style: solid;
+    background-color: aqua;
+    flex-grow: 1;
+}
+#navbar a {
+    text-decoration: none;
+
+    width: 150px;
+    height: 50px;
+    line-height: 50px;
+
+    text-align: center;
+
+    display: block;
+
+    color: #777;
+
+    border-bottom: 2px solid #FFF;
+}
+#navbar {
+    display: flex;
+    justify-content: center;
+    box-shadow: 0px 3px 5px #777;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    z-index: 1;
+    opacity: 70%;
+    background-color: #777;
+    color: black;
+
+}
+#navbar > a:hover + #sub-menu {
+  display: block;
+}
+
+#sub-menu ul {
+  top: 0px;
+  left: 180px;
+}
+
+#navbar li:hover > ul {
+  display: block;
+}
+
+#navbar a {
+  color: black;
+  text-decoration: none;
+  display: block;
+  height: 50px;
+  line-height: 50px;
+}
+#sub-menu {
+  position: absolute;
+  display: none;
+  background-color: azure;
+  list-style-type: none;
+  padding: 0;
+}
+#sub-menu a {
+  color: black;
+  padding: 10px 15px;
+  display: block;
+  text-decoration: none;
+}
+
+@font-face {
+  src: url("Mantana-Regular.otf");
+  font-family: "Mantana";
+}
