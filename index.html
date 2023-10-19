@@ -2,6 +2,7 @@
 <html>
     <head>
         <title>Nicholas Barkidjija | Student Page</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <style>
             
 
@@ -50,6 +51,22 @@
                 width:auto;
                 padding-left: 20px;
             }
+
+            @media (max-width: 767px) {
+                #wrapper1, #wrapper2 {
+                    display: block; /* Override the flex display */
+                }
+
+                #left1, #right1, #left2, #right2 {
+                    width: 100%; /* Make each div take the full width */
+                    padding-left: 0; /* Remove left padding */
+                    padding-right: 0; /* Remove right padding */
+                }
+                body {
+                    max-width: 767px;
+                }
+            }
+
 
         </style>
     </head>
