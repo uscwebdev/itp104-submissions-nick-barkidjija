@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="Explore the best Chicago has to offer to tourists while learning about the history of how current Chicago came to be.">
+        <style>
+            body {
+                margin: 0;
+                padding: 0;
+                height: 100%;
+            }
+
+            .container {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: 1fr 1fr;
+                height: 100vh;
+                gap: 0;
+            }
+
+            .grid-item {
+                position: relative;
+                width: 100%;
+                height: 100%;
+            }
+
+            .grid-item img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+            .grid-item h2 {
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+                text-align: center;
+                color: #f1f1f2;
+                margin: 0;
+            }
+            .grid-item p {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, calc(-50% + 40px));
+                text-align: center;
+                color: #f1f1f2;
+                font-style: italic;
+            }
+            .center-title {
+                grid-column: 1 / span 2;
+                grid-row: 1 / span 2;
+                z-index: 1;
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .center-title h1 {
+                text-align: center;
+                color: black;
+                text-shadow: #f1f1f2;
+                font-size: 300%;
+                
+            }
+            .grid-item h2, .grid-item p, .center-title {
+                text-shadow: 2px 2px 4px rgba(74, 78, 105, 1);
+            }
+            a {
+                color: #f1f1f2;
+                font-style: normal;
+            }
+        </style>
+        <title>Visiting Chicago | Home Page</title>
+        
+    </head>
+    <body>
+        <div class="container" id="overall">
+            <div class="grid-item" id="img1">
+                <img src="img/history.jpeg" alt="History">
+                <h2><a href="history.html">History</a></h2>
+                <p>Chicago has a rich and lengthy history, evident in its famous architecture and other key parts of the cityscape.</p>
+            </div>
+            <div class="grid-item" id="img2">
+                <img src="img/food.jpeg" alt="Food 2">
+                <h2><a href="toDo.html">Food</a></h2>
+                <p>Food in Chicago is renowned worldwide for its diversity of origin and flavor. You can eat food from any culture in the world in and around the city.</p>
+            </div>
+            <div class="grid-item" id="img3">
+                <img src="img/soundbar.jpeg" alt="Nightlife">
+                <h2><a href="toDo.html">Nightlife</a></h2>
+                <p>Chicago's nightlife varies greatly depending on the neighborhood, but there are events every weekend and weeknight that keep the city busy after dark.</p>
+            </div>
+            <div class="grid-item" id="img4">
+                <img src="img/skyline.jpeg" alt="Culture">
+                <h2><a href="history.html">Culture</a></h2>
+                <p>Chicago's culture has been defined by the presence of arts and the development of multiple ethnic and cultural groups alonside one another.</p>
+            </div>
+            <div class="center-title">
+                <h1>Visiting Chicago</h1>
+            </div>
+
+        </div>
+    </body>
+</html>
