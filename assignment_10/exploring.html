@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Exploring</title>
+        <meta charset="UTF-8">
+        <meta name="description" content="Here are the top spots to eat, daytime things to see, and places to explore on a night out in Chicaago!">
+        <style>
+            #top-bar {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-left: auto;
+                margin-right: auto;
+                top: 0;
+                height: 40px;
+                width: 100%;
+                text-align: center;
+                background-color: #D33F49;
+                box-shadow: #4A4E69;
+                margin-bottom: 5px;
+            }
+            #navbar {
+                position: absolute;
+                left: 10px;
+            }
+            #navbar a {
+                margin-right: 10px;
+                text-decoration: none;
+                color: white;
+                font-weight: bold;
+            }
+            #wideImage {
+                justify-content: center;
+                align-items: center;
+                margin-left: auto;
+                margin-right: auto;
+                width: 100%;
+
+            }
+            #wideImage img {
+                width: 100%;
+            }
+            .columns-container {
+                display: flex;
+                justify-content: space-between;
+                margin-top: 0px; /* Adjust as needed */
+            }
+
+            .column {
+                flex: 1; /* Each column takes equal width */
+                margin: 0 5px; /* Spacing between columns */
+                text-align: center; /* Center-align the content */
+            }
+
+            .column h2 {
+                margin-bottom: 10px; /* Spacing below the header */
+            }
+
+            .column img {
+                max-width: 100%; /* Make image responsive */
+                height: auto; /* Maintain aspect ratio */
+            }
+
+            .column p {
+                text-align: left;
+                text-indent: 15px;
+                
+            }
+
+            @media (max-width: 991px) and (min-width: 768px) {
+                .columns-container {
+                    flex-direction: column;
+                }
+                .column {
+                    margin-bottom: 20px;
+                }
+                .column img {
+                    width: 80%;
+                    margin: 0 auto;
+                }
+            }
+
+            @media (max-width: 767px) {
+                #navbar {
+                    position: static;
+                    text-align: center;
+                }
+                #navbar a {
+                    display: inline-block;
+                    margin: 0 5px;
+                }
+
+                .column img {
+                    width: 100%;
+                }
+                .column {
+                    margin: 0 10px;
+                }
+                .column h2, .column p {
+                    font-size: larger;
+                }
+            }
+
+        </style>
+    </head>
+    <body>
+        <div class="container" id="top-bar">
+            <nav id="navbar">
+                <a href="homePageFinal.html" target="_blank">Home</a>
+                <a href="historyFinal.html" target="_blank">History</a>
+            </nav>
+            <h1>Exploring the City</h1>
+        </div>
+        <div class="container" id="wideImage">
+            <img src="explore_img/panorama.jpeg" alt="Chicago skyline">
+        </div>
+        <div class="columns-container">
+            <div class="column">
+                <h2>Food</h2>
+                <img src="explore_img/gibsons.jpeg" alt="Gibson's Steakhouse">
+                <p>Chicago is renowned around the United States for its food scene. Each of the city's 77 neighborhoods boasts their own top restaurants, 
+                    with some being exceptionally famous. There is street food that is well known, such as a Chicago Dog and Italian beef.
+                </p>
+                <p>Chicago also has some exceptional restaurants of fancier quality. One of these is the famous Chicago instution, Gibson's steakhouse (depicted above). Other 
+                    restaurants in this eschelon are found typically in the downtown area (neighborhoods including the Loop, Streeterville, and River North, among others).
+                    Chicago also has exceptional food from many ethnic groups, specifically Polish, Mexican, Indian & Chinese foods. While Chicago may be overshadowed in the Mexican food scene by 
+                    Southern California and Texas, Chicago has a significant Mexican population and multiple Latinx-dominated neighborhoods.
+                </p>
+            </div>
+            <div class="column">
+                <h2>Daytime</h2>
+                <img src="explore_img/bean.jpeg" alt="Cloud Gate (the Bean)">
+                <p>Chicago has a vibrant cultural scene and plenty of daytime activities for any visitor. Some of the most popular tourist attractions in the city are right in Downtown. The Art Institute of Chicago is 
+                    famous around the country for its collections, having featured in several movies. Very close to this museum is Millenium Park, the city's most famous green space, between the main downtown area (known as the Loop) 
+                    and Lake Michigan. Millenium Park includes The Bean, officially known as Cloud Gate, the reflective metal sculpture pictured above. Also in downtown is the River Walk, which was built in the last ten years and has many shops, 
+                    greenspaces and sights, and the famous riverboat architecture tour.
+                </p>
+                <p>Moving out of the downtown area, Chicago has much to offer still. In the neighborhoods, there are wonderful small parks to see and visit, and one of the city's most famous museums, the Museum of Science and Industry, 
+                    is located further away from Downtown on the south side. In the spring and summer, take advantage of relatively cheap baseball tickets at the famous Wrigley Field, in the Lakeview neighborhood on the North side, or 
+                    visit the best free zoo in the country, the Lincoln Park Zoo, located in one of the largest urban parks in the United States.
+                </p>
+            </div>
+            <div class="column">
+                <h2>Nightlife</h2>
+                <img src="explore_img/boystown.jpeg" alt="Nightlife in Boystown">
+                <p>For evening activities, Chicago has a plethora of options for going out for drinks. As far as bars go, Chicago has dozens of taverns, hole-in-the-wall establishments, and local 
+                    watering holes that people flock to every night of the week. Furthermore, Chicago has the most breweries of any city in the United States (101, to be exact). 
+                    Chicago also has many cocktail bars and speakeasies (of sorts), such as bars like Estereo and Nobody's Darling.
+                </p>
+                <p>
+                    Going later into the evening, Chicago has an incredible nightlife scene. Certain neighborhoods have certain vibes to their bars and clubs, but there is never a wrong option, rather it 
+                    depends on the trajectory of your evening. As a whole, Chicago nightlife has a rich history, as Chicago is the birthplace of House music and a certain variety of jazz that is still enjoyed 
+                    at several clubs. My personal favorite spot to go out is Boystown, the center of Chicago's LGBTQ+ community, located on the north side of the city.
+                </p>
+            </div>
+        </div>
+
+    </body>
+</html>
